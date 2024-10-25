@@ -1,0 +1,47 @@
+GET http://localhost:4002/
+
+####
+
+GET http://localhost:4002/contact/1
+
+#####
+
+POST http://localhost:4002/contact/
+Content-Type : application/json
+
+{
+    "id":4,
+    "name":"klm",
+    "email":"klm@gmail.com",
+    "address":"kerala",
+    "phoneno":7676764567
+
+
+}
+
+####
+PUT http://localhost:4002/contact/2
+Content-Type: application/json
+
+{
+  "name":"yyy",
+  "email":"yyy@gmail.com",
+  "address":"lucknow",
+  "phoneno":8787875678
+}
+
+####
+
+GET http://localhost:4002/contact/?limit=2&search_q=abc&order_by=id&order=DESC
+
+
+####
+
+POST http://localhost:4002/users/
+Content-Type:application/json
+
+{
+    "username":"hhh123",
+     "name":"hhh",
+     "password":"hhh@123"
+}
